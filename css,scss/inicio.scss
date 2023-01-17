@@ -1,0 +1,285 @@
+@import "_variables";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.titulo {
+    font-family: $fuente-1;
+    font-size: 200%;
+}
+
+body {
+    background-color: $color-1;
+
+    nav {
+        border: 4px solid $color-3;
+        box-shadow: inset 0 0 5px $color-2;
+
+        li {
+            font-size: 20px;
+        }
+
+        li a:hover {
+            color: $color-3 !important;
+        }
+
+        h1 {
+            font-size: 25px;
+        }
+    }
+
+    .slider {
+        width: 100%;
+        height: 800px;
+        overflow: hidden;
+
+        ul {
+            display: flex;
+            animation: cambio 20s infinite alternate linear;
+            width: 400%;
+            height: 600px;
+        }
+
+        li {
+            width: 100%;
+            list-style: none;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    @keyframes cambio {
+        0% {
+            margin-left: 0;
+        }
+
+        20% {
+            margin-left: 0;
+        }
+
+        25% {
+            margin-left: -100%;
+        }
+
+        45% {
+            margin-left: -100%;
+        }
+
+        50% {
+            margin-left: -200%;
+        }
+
+        70% {
+            margin-left: -200%;
+        }
+
+        75% {
+            margin-left: -300%;
+        }
+
+        100% {
+            margin-left: -300%;
+        }
+    }
+
+    .section1 {
+        margin-top: 2%;
+
+    }
+
+    .flex-container1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .flex-container2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .ofertas1 {
+        background-color: white;
+        font-size: 40px;
+        border: 3px dashed;
+        margin-bottom: 70px;
+        width: 70%;
+    }
+
+    .ofertas2 {
+        color: red;
+        margin-top: 20px;
+        background-color: $color-2;
+        margin-bottom: 70px;
+        width: 30%;
+        border: 3px dashed $color-1;
+        box-shadow: inset 0 0 9px $color-3;
+
+    }
+
+    // .boton-compra {
+    //     color: $color-3;
+    //     display: flex;
+    //     flex-direction: row;
+    //     justify-content: space-around;
+    //     font-size: 20px;
+
+    //     :hover {
+    //         background-color: $color-2;
+    //         color: $color-3;
+    //         border: 2px solid;
+    //     }
+    // }
+
+    // .compra2:hover {
+    //     background-color: rgba(2, 28, 111, 0.82);
+    //     color: $color-2;
+    // }
+
+    // .compra3:hover {
+    //     background-color: rgb(123, 17, 123);
+    //     color: rgba(176, 176, 10, 0.791);
+    // }
+
+    // .compra4:hover {
+    //     background-color: $color-2;
+    //     color: white;
+    // }
+
+    // .compra5:hover {
+    //     background-color: wheat;
+    //     color: rgba(178, 6, 6, 0.826);
+    // }
+
+    // .compra6:hover {
+    //     background-color: $color-2;
+    //     color: rgba(8, 202, 227, 0.985);
+    // }
+
+
+    main {
+        div {
+            img {
+                width: 25%;
+                height: 300px;
+
+            }
+        }
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        background-color: $color-2;
+        border: 4px dashed $color-1;
+        border-bottom: none;
+
+
+        .location {
+            display: flex;
+            flex-direction: column;
+            color: $color-1;
+            margin-top: 1%;
+            margin-left: 2%;
+            margin-bottom: 1%;
+
+            .map {
+                height: 200px;
+                width: 150%;
+            }
+
+            .fa-solid {
+                margin-left: 80%;
+                margin-bottom: 10px;
+                font-size: 30px;
+
+            }
+        }
+
+        .horarios {
+            display: flex;
+            flex-direction: column;
+            color: $color-1;
+            margin-top: 5%;
+            margin-left: 5%;
+            margin-right: 5%;
+
+
+            .fa-regular {
+                margin-left: 50%;
+                margin-bottom: 10px;
+                font-size: 30px;
+
+            }
+
+            .horarios-p {
+                font-size: 15px;
+                margin-left: 100px;
+            }
+        }
+
+        .redes {
+            color: $color-1;
+            margin-top: 10%;
+            margin-right: 5%;
+
+            .fa-brands {
+                font-size: 30px;
+                letter-spacing: 8px;
+                color: $color-1;
+                background-color: $color-2;
+                background-size: cover;
+            }
+
+            .redes-p {
+                font-size: 15px;
+            }
+
+            .fa-brands:hover {
+                background-color: $color-1;
+                color: $color-2;
+            }
+        }
+    }
+
+
+    @media only screen and (max-width:768px) {
+        .flex-container1 {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            
+        }
+    }
+
+    @media only screen and (max-width:768px) {
+        .flex-container2 {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+    }
+    
+    @media only screen and (max-width:650px) {
+        footer{
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+    }
+
+    @media only screen and (max-width:650px) {
+        .location{
+            width: 50%;
+        }
+    }
+}

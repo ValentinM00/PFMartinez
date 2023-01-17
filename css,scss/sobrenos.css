@@ -1,0 +1,246 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.titulo {
+  font-family: font-family, "Merriweather", serif;
+  font-size: 200%;
+}
+
+body {
+  background-color: pink;
+}
+body nav {
+  border: 4px solid rgb(227, 69, 198);
+  box-shadow: inset 0 0 5px black;
+}
+body nav li {
+  font-size: 20px;
+}
+body nav li a:hover {
+  color: rgb(227, 69, 198) !important;
+}
+body nav h1 {
+  font-size: 25px;
+}
+body main section {
+  height: 600px;
+  width: 100%;
+  background: #FF0099;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, hsla(323deg, 19%, 24%, 0.678), hsla(324deg, 100%, 50%, 0.674)), url(../Multimedia/Fondo\ wave.jpg);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+body main section .parte1-5 {
+  color: rgb(223, 4, 248);
+  font-size: 100px;
+}
+body main section .parte1-6 {
+  color: white;
+  font-size: 50px;
+  margin-left: 10%;
+  margin-right: 5%;
+}
+body main section .wave {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+body main .parte2 {
+  height: 300px;
+  display: flex;
+  flex-direction: row;
+}
+body main .parte2 img {
+  width: 50%;
+  margin: 1%;
+}
+body main .parrafos {
+  display: flex;
+  flex-direction: row;
+}
+body main .p1 {
+  width: 50%;
+}
+body main .p2 {
+  width: 50%;
+}
+body .galeria-h {
+  text-align: center;
+  background-color: white;
+  color: rgb(227, 69, 198);
+}
+body .galeria {
+  height: auto;
+  width: 100%;
+  background-color: rgb(255, 175, 188);
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(8, 200px);
+  grid-gap: 20px;
+}
+body .item {
+  height: 200px;
+  width: 100%;
+  background-color: white;
+  border: 2px solid #000;
+  background-size: cover;
+  background-position: center;
+  filter: grayscale(100%);
+}
+body .item:hover {
+  transition: all 0.8s;
+  transform: scale(1.05);
+  filter: grayscale(0%);
+}
+body .item1:hover {
+  background-image: url(../Multimedia/Empleado\ 1.jpg);
+}
+body .item2:hover {
+  background-image: url(../Multimedia/Empleado\ 6.jpg);
+}
+body .item3:hover {
+  background-image: url(../Multimedia/Empleado\ 4.jpg);
+}
+body .item4:hover {
+  background-image: url(../Multimedia/Empleado\ 2.jpg);
+}
+body .item5:hover {
+  background-image: url(../Multimedia/Empleado\ 8.jpg);
+}
+body .item6:hover {
+  background-image: url(../Multimedia/Empleado3.jpg);
+}
+body .item7:hover {
+  background-image: url(../Multimedia/Empleado.jpg);
+}
+body .item8:hover {
+  background-image: url(../Multimedia/Empleado\ 5.jpg);
+}
+@media only screen and (min-width: 480px) {
+  body .galeria {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 200px);
+  }
+}
+@media only screen and (min-width: 480px) and (min-width: 768px) and (max-width: 1024px) {
+  body .galeria {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  body .item1 {
+    grid-column: 1/3;
+    grid-row: 1/2;
+  }
+  body .item2 {
+    grid-column: 3/4;
+    grid-row: 1/2;
+  }
+  body .item3 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  body .item4 {
+    grid-column: 2/4;
+  }
+  body .item5 {
+    grid-column: 1/3;
+  }
+  body .item6 {
+    grid-column: 3/4;
+  }
+  body .item8 {
+    grid-column: 2/4;
+  }
+}
+@media only screen and (min-width: 480px) and (min-width: 1024px) {
+  body .galeria {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 200px 200px;
+  }
+}
+@media only screen and (min-width: 480px) {
+  body footer {
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    border: 4px dashed pink;
+    border-bottom: none;
+  }
+  body footer .location {
+    display: flex;
+    flex-direction: column;
+    color: pink;
+    margin-top: 1%;
+    margin-left: 2%;
+    margin-bottom: 1%;
+  }
+  body footer .location .map {
+    height: 200px;
+    width: 150%;
+  }
+  body footer .location .fa-solid {
+    margin-left: 80%;
+    margin-bottom: 10px;
+    font-size: 30px;
+  }
+  body footer .horarios {
+    display: flex;
+    flex-direction: column;
+    color: pink;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  body footer .horarios .fa-regular {
+    margin-left: 50%;
+    margin-bottom: 10px;
+    font-size: 30px;
+  }
+  body footer .horarios .horarios-p {
+    font-size: 15px;
+    margin-left: 100px;
+  }
+  body footer .redes {
+    color: pink;
+    margin-top: 10%;
+    margin-right: 5%;
+  }
+  body footer .redes .fa-brands {
+    font-size: 30px;
+    letter-spacing: 8px;
+    color: pink;
+    background-color: black;
+    background-size: cover;
+  }
+  body footer .redes .redes-p {
+    font-size: 15px;
+  }
+  body footer .redes .fa-brands:hover {
+    background-color: pink;
+    color: black;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 650px) {
+  body footer {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 650px) {
+  body .location {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 650px) {
+  body .trabajadores {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}/*# sourceMappingURL=sobrenos.css.map */

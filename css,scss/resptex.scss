@@ -1,0 +1,240 @@
+@import "_variables";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.titulo{
+    font-family: $fuente-1;
+    font-size: 200%;
+}
+body{
+    background-color: $color-1;
+
+    nav{
+        border: 4px solid $color-3;
+        box-shadow:inset 0 0 5px $color-2;
+        
+        li{
+            font-size: 20px;
+        }
+
+        li a:hover{
+            color:$color-3 !important;
+        }
+        h1{
+            font-size: 25px;
+        }
+    }
+    h2{
+        margin-top: 5%;
+        margin-bottom: 5%;
+        background-color: white;
+        border: 3px dashed $color-2;
+    }
+
+    .carrusel1{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+        .seda1{
+            width: 20%;
+            margin: 10px;
+            border: dashed $color-3;
+        }
+
+        .seda2{
+            width: 20%;
+            margin: 10px;
+            border: dashed $color-3;
+        }
+        .seda3{
+            width: 20%;
+            margin: 10px;
+            border: dashed $color-3;
+        }
+        .seda4{
+            width: 20%;
+            margin: 10px;
+            border: dashed $color-3;
+        }
+    }
+
+    .carrusel2{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+        .algodon1{
+            width: 20%;
+            margin: 10px;
+            border: dashed $color-3;
+        }
+
+        .algodon2{
+            width: 20%;
+            margin: 10px;
+            border: dashed $color-3;
+        }
+        .algodon3{
+            width: 20%;
+            margin: 10px;
+            border: dashed $color-3;
+        }
+        .algodon4{
+            width: 20%;
+            margin: 10px;
+            border: dashed $color-3;
+        }
+    }
+
+    .carrusel3{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-bottom: 5%;
+
+        .lino1{
+            width: 20%;
+            margin: 10px;
+            border: dashed $color-3;
+        }
+
+        .lino2{
+            width: 20%;
+            margin: 10px;
+            border: dashed $color-3;
+        }
+        .lino3{
+            width: 20%;
+            margin: 10px;
+            border: dashed $color-3;
+        }
+        .lino4{
+            width: 20%;
+            margin: 10px;
+            border: dashed $color-3;
+        }
+    }
+
+
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        background-color: $color-2;
+        border: 4px dashed $color-1;
+        border-bottom: none;
+
+
+        .location {
+            display: flex;
+            flex-direction: column;
+            color: $color-1;
+            margin-top: 1%;
+            margin-left: 2%;
+            margin-bottom: 1%;
+
+            .map {
+                height: 200px;
+                width: 150%;
+            }
+
+            .fa-solid {
+                margin-left: 80%;
+                margin-bottom: 10px;
+                font-size: 30px;
+
+            }
+        }
+
+        .horarios {
+            display: flex;
+            flex-direction: column;
+            color: $color-1;
+            margin-top: 5%;
+            margin-left: 5%;
+            margin-right: 5%;
+
+
+            .fa-regular {
+                margin-left: 50%;
+                margin-bottom: 10px;
+                font-size: 30px;
+
+            }
+
+            .horarios-p {
+                font-size: 15px;
+                margin-left: 100px;
+            }
+        }
+
+        .redes {
+            color: $color-1;
+            margin-top: 10%;
+            margin-right: 5%;
+
+            .fa-brands {
+                font-size: 30px;
+                letter-spacing: 8px;
+                color: $color-1;
+                background-color: $color-2;
+                background-size: cover;
+            }
+
+            .redes-p {
+                font-size: 15px;
+            }
+
+            .fa-brands:hover {
+                background-color: $color-1;
+                color: $color-2;
+            }
+        }
+    }
+
+
+    @media only screen and (max-width:768px) {
+        .carrusel1 {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            
+        }
+    }
+
+    @media only screen and (max-width:768px) {
+        .carrusel2 {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+    }
+    @media only screen and (max-width:768px) {
+        .carrusel3 {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+    }
+    
+    @media only screen and (max-width:650px) {
+        footer{
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+    }
+
+    @media only screen and (max-width:650px) {
+        .location{
+            width: 50%;
+        }
+    }
+}
