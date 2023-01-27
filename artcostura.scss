@@ -4,11 +4,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: $fuente-3;
 }
 .titulo{
     font-family: $fuente-1;
     font-size: 200%;
 }
+
+h2{
+    font-family: $fuente-2;
+}
+
 body{
     background-color: $color-1;
 
@@ -39,23 +45,27 @@ body{
         flex-direction: row;
         justify-content: space-around;
 
-        .seda1{
+        .hilos1{
+            height: 300px;
             width: 20%;
             margin: 10px;
             border: dashed $color-3;
         }
 
-        .seda2{
+        .hilos2{
+            height: 300px;
             width: 20%;
             margin: 10px;
             border: dashed $color-3;
         }
-        .seda3{
+        .hilos3{
+            height: 300px;
             width: 20%;
             margin: 10px;
             border: dashed $color-3;
         }
-        .seda4{
+        .hilos4{
+            height: 300px;
             width: 20%;
             margin: 10px;
             border: dashed $color-3;
@@ -67,23 +77,27 @@ body{
         flex-direction: row;
         justify-content: space-around;
 
-        .algodon1{
+        .botones1{
+            height: 300px;
             width: 20%;
             margin: 10px;
             border: dashed $color-3;
         }
 
-        .algodon2{
+        .botones2{
+            height: 300px;
             width: 20%;
             margin: 10px;
             border: dashed $color-3;
         }
-        .algodon3{
+        .botones3{
+            height: 300px;
             width: 20%;
             margin: 10px;
             border: dashed $color-3;
         }
-        .algodon4{
+        .botones4{
+            height: 300px;
             width: 20%;
             margin: 10px;
             border: dashed $color-3;
@@ -96,23 +110,27 @@ body{
         justify-content: space-around;
         margin-bottom: 5%;
 
-        .lino1{
+        .blondas1{
+            height: 300px;
             width: 20%;
             margin: 10px;
             border: dashed $color-3;
         }
 
-        .lino2{
+        .blondas2{
+            height: 300px;
             width: 20%;
             margin: 10px;
             border: dashed $color-3;
         }
-        .lino3{
+        .blondas3{
+            height: 300px;
             width: 20%;
             margin: 10px;
             border: dashed $color-3;
         }
-        .lino4{
+        .blondas4{
+            height: 300px;
             width: 20%;
             margin: 10px;
             border: dashed $color-3;
@@ -203,8 +221,20 @@ body{
             justify-content: center;
             align-items: center;
             justify-content: space-between;
-            width: 100%;
             
+
+            .hilos1{
+                width: 80%;
+            }
+            .hilos2{
+                width: 80%;
+            }
+            .hilos3{
+                width: 80%;
+            }
+            .hilos4{
+                width: 80%;
+            }
         }
     }
 
@@ -213,7 +243,19 @@ body{
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            width: 100%;
+
+            .botones1{
+                width: 80%;
+            }
+            .botones2{
+                width: 80%;
+            }
+            .botones3{
+                width: 80%;
+            }
+            .botones4{
+                width: 80%;
+            }
         }
     }
     @media only screen and (max-width:768px) {
@@ -221,7 +263,19 @@ body{
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            width: 100%;
+
+            .blondas1{
+                width: 80%;
+            }
+            .blondas2{
+                width: 80%;
+            }
+            .blondas3{
+                width: 80%;
+            }
+            .blondas4{
+                width: 80%;
+            }
         }
     }
     

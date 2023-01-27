@@ -4,11 +4,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: $fuente-3;
 }
 .titulo{
     font-family: $fuente-1;
     font-size: 200%;
 }
+
+h2{
+    font-family: $fuente-2;
+}
+
 body{
     background-color: $color-1;
 
@@ -30,7 +36,7 @@ body{
 
     .seda{
         margin-top: 5%;
-        margin-bottom: 70px;
+        margin-bottom: 5%;
         background-color: white;
         border: 3px dashed $color-2;
     }
@@ -53,22 +59,26 @@ body{
         justify-content: space-around;
 
         .seda1{
+            height: 300px;
             width: 20%;
             margin: 10px;
             border: dashed $color-3;
         }
 
         .seda2{
+            height: 300px;
             width: 20%;
             margin: 10px;
             border: dashed $color-3;
         }
         .seda3{
+            height: 300px;
             width: 20%;
             margin: 10px;
             border: dashed $color-3;
         }
         .seda4{
+            height: 300px;
             width: 20%;
             margin: 10px;
             border: dashed $color-3;
@@ -81,22 +91,26 @@ body{
         justify-content: space-around;
 
         .algodon1{
+            height: 300px;
             width: 20%;
             margin: 10px;
             border: dashed $color-3;
         }
 
         .algodon2{
+            height: 300px;
             width: 20%;
             margin: 10px;
             border: dashed $color-3;
         }
         .algodon3{
+            height: 300px;
             width: 20%;
             margin: 10px;
             border: dashed $color-3;
         }
         .algodon4{
+            height: 300px;
             width: 20%;
             margin: 10px;
             border: dashed $color-3;
@@ -110,22 +124,26 @@ body{
         margin-bottom: 5%;
 
         .lino1{
+            height: 300px;
             width: 20%;
             margin: 10px;
             border: dashed $color-3;
         }
 
         .lino2{
+            height: 300px;
             width: 20%;
             margin: 10px;
             border: dashed $color-3;
         }
         .lino3{
+            height: 300px;
             width: 20%;
             margin: 10px;
             border: dashed $color-3;
         }
         .lino4{
+            height: 300px;
             width: 20%;
             margin: 10px;
             border: dashed $color-3;
@@ -215,9 +233,21 @@ body{
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            justify-content: space-between;
             width: 100%;
-            
+
+
+            .seda1{
+                width: 80%;
+            }
+            .seda2{
+                width: 80%;
+            }
+            .seda3{
+                width: 80%;
+            }
+            .seda4{
+                width: 80%;
+            }
         }
     }
 
@@ -227,6 +257,19 @@ body{
             justify-content: center;
             align-items: center;
             width: 100%;
+
+            .algodon1{
+                width: 80%;
+            }
+            .algodon2{
+                width: 80%;
+            }
+            .algodon3{
+                width: 80%;
+            }
+            .algodon4{
+                width: 80%;
+            }
         }
     }
     @media only screen and (max-width:768px) {
@@ -235,6 +278,19 @@ body{
             justify-content: center;
             align-items: center;
             width: 100%;
+
+            .lino1{
+                width: 80%;
+            }
+            .lino2{
+                width: 80%;
+            }
+            .lino3{
+                width: 80%;
+            }
+            .lino4{
+                width: 80%;
+            }
         }
     }
     

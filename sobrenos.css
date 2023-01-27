@@ -2,11 +2,16 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: font-family, "Roboto Mono", monospace;
 }
 
 .titulo {
   font-family: font-family, "Merriweather", serif;
   font-size: 200%;
+}
+
+h2 {
+  font-family: font-family, "Ubuntu", sans-serif;
 }
 
 body {
@@ -31,7 +36,7 @@ body main section {
   background: #FF0099;
   /* fallback for old browsers */
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, hsla(323deg, 19%, 24%, 0.678), hsla(324deg, 100%, 50%, 0.674)), url(./Multimedia/Fondo\ wave.jpg);
+  background: linear-gradient(to right, hsla(323deg, 19%, 24%, 0.678), hsla(324deg, 100%, 50%, 0.674)), url(../Multimedia/Fondo\ wave.jpg);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background-size: cover;
   background-attachment: fixed;
@@ -39,7 +44,11 @@ body main section {
 }
 body main section .parte1-5 {
   color: rgb(223, 4, 248);
-  font-size: 100px;
+  font-size: 4em;
+  height: 10%;
+  width: 80%;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 body main section .parte1-6 {
   color: white;
@@ -53,23 +62,19 @@ body main section .wave {
   width: 100%;
 }
 body main .parte2 {
-  height: 300px;
+  height: 10%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 body main .parte2 img {
+  height: 100%;
   width: 50%;
-  margin: 1%;
+  border-radius: 10px;
 }
-body main .parrafos {
-  display: flex;
-  flex-direction: row;
-}
-body main .p1 {
-  width: 50%;
-}
-body main .p2 {
-  width: 50%;
+body .snos {
+  margin: 2%;
+  border: 3px dashed rgb(227, 69, 198);
+  padding: 1%;
 }
 body .galeria-h {
   text-align: center;
@@ -100,33 +105,93 @@ body .item:hover {
   transform: scale(1.05);
   filter: grayscale(0%);
 }
-body .item1:hover {
-  background-image: url(./Multimedia/Empleado\ 1.jpg);
+body .item1 {
+  background-image: url(../Multimedia/Empleado\ 1.jpg);
 }
-body .item2:hover {
-  background-image: url(./Multimedia/Empleado\ 6.jpg);
+body .item2 {
+  background-image: url(../Multimedia/Empleado\ 6.jpg);
 }
-body .item3:hover {
-  background-image: url(./Multimedia/Empleado\ 4.jpg);
+body .item3 {
+  background-image: url(../Multimedia/Empleado\ 4.jpg);
 }
-body .item4:hover {
-  background-image: url(./Multimedia/Empleado\ 2.jpg);
+body .item4 {
+  background-image: url(../Multimedia/Empleado\ 2.jpg);
 }
-body .item5:hover {
-  background-image: url(./Multimedia/Empleado\ 8.jpg);
+body .item5 {
+  background-image: url(../Multimedia/Empleado\ 8.jpg);
 }
-body .item6:hover {
-  background-image: url(./Multimedia/Empleado3.jpg);
+body .item6 {
+  background-image: url(../Multimedia/Empleado3.jpg);
 }
-body .item7:hover {
-  background-image: url(./Multimedia/Empleado.jpg);
+body .item7 {
+  background-image: url(../Multimedia/Empleado.jpg);
 }
-body .item8:hover {
-  background-image: url(./Multimedia/Empleado\ 5.jpg);
+body .item8 {
+  background-image: url(../Multimedia/Empleado\ 5.jpg);
+}
+body footer {
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+  border: 4px dashed pink;
+  border-bottom: none;
+}
+body footer .location {
+  display: flex;
+  flex-direction: column;
+  color: pink;
+  margin-top: 1%;
+  margin-left: 2%;
+  margin-bottom: 1%;
+}
+body footer .location .map {
+  height: 200px;
+  width: 150%;
+}
+body footer .location .fa-solid {
+  margin-left: 80%;
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+body footer .horarios {
+  display: flex;
+  flex-direction: column;
+  color: pink;
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+body footer .horarios .fa-regular {
+  margin-left: 50%;
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+body footer .horarios .horarios-p {
+  font-size: 15px;
+  margin-left: 100px;
+}
+body footer .redes {
+  color: pink;
+  margin-top: 10%;
+  margin-right: 5%;
+}
+body footer .redes .fa-brands {
+  font-size: 30px;
+  letter-spacing: 8px;
+  color: pink;
+  background-color: black;
+  background-size: cover;
+}
+body footer .redes .redes-p {
+  font-size: 15px;
+}
+body footer .redes .fa-brands:hover {
+  background-color: pink;
+  color: black;
 }
 @media only screen and (min-width: 480px) {
   body .galeria {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: repeat(4, 200px);
   }
 }
@@ -165,82 +230,14 @@ body .item8:hover {
     grid-template-rows: 200px 200px;
   }
 }
-@media only screen and (min-width: 480px) {
-  body footer {
-    display: flex;
-    flex-direction: row;
-    background-color: black;
-    border: 4px dashed pink;
-    border-bottom: none;
-  }
-  body footer .location {
-    display: flex;
-    flex-direction: column;
-    color: pink;
-    margin-top: 1%;
-    margin-left: 2%;
-    margin-bottom: 1%;
-  }
-  body footer .location .map {
-    height: 200px;
-    width: 150%;
-  }
-  body footer .location .fa-solid {
-    margin-left: 80%;
-    margin-bottom: 10px;
-    font-size: 30px;
-  }
-  body footer .horarios {
-    display: flex;
-    flex-direction: column;
-    color: pink;
-    margin-top: 5%;
-    margin-left: 5%;
-    margin-right: 5%;
-  }
-  body footer .horarios .fa-regular {
-    margin-left: 50%;
-    margin-bottom: 10px;
-    font-size: 30px;
-  }
-  body footer .horarios .horarios-p {
-    font-size: 15px;
-    margin-left: 100px;
-  }
-  body footer .redes {
-    color: pink;
-    margin-top: 10%;
-    margin-right: 5%;
-  }
-  body footer .redes .fa-brands {
-    font-size: 30px;
-    letter-spacing: 8px;
-    color: pink;
-    background-color: black;
-    background-size: cover;
-  }
-  body footer .redes .redes-p {
-    font-size: 15px;
-  }
-  body footer .redes .fa-brands:hover {
-    background-color: pink;
-    color: black;
-  }
-}
-@media only screen and (min-width: 480px) and (max-width: 650px) {
+@media only screen and (max-width: 650px) {
   body footer {
     display: grid;
     grid-template-columns: 1fr;
-  }
-}
-@media only screen and (min-width: 480px) and (max-width: 650px) {
-  body .location {
-    width: 50%;
   }
 }
 @media only screen and (max-width: 650px) {
-  body .trabajadores {
-    display: grid;
-    grid-template-columns: 1fr;
+  body .location {
+    width: 50%;
   }
 }/*# sourceMappingURL=sobrenos.css.map */

@@ -2,11 +2,16 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: font-family, "Roboto Mono", monospace;
 }
 
 .titulo {
   font-family: font-family, "Merriweather", serif;
   font-size: 200%;
+}
+
+h2 {
+  font-family: font-family, "Ubuntu", sans-serif;
 }
 
 body {
@@ -97,18 +102,45 @@ body .slider img {
     margin-left: -300%;
   }
 }
-body .section1 {
-  margin-top: 2%;
-}
 body .flex-container1 {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
+body .flex-container1 .oferta1 {
+  width: 30%;
+  margin: 10px;
+  border: dashed rgb(227, 69, 198);
+}
+body .flex-container1 .oferta2 {
+  width: 30%;
+  margin: 10px;
+  border: dashed rgb(227, 69, 198);
+}
+body .flex-container1 .oferta3 {
+  width: 30%;
+  margin: 10px;
+  border: dashed rgb(227, 69, 198);
+}
 body .flex-container2 {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+}
+body .flex-container2 .vendido1 {
+  width: 30%;
+  margin: 10px;
+  border: dashed rgb(227, 69, 198);
+}
+body .flex-container2 .vendido2 {
+  width: 30%;
+  margin: 10px;
+  border: dashed rgb(227, 69, 198);
+}
+body .flex-container2 .vendido3 {
+  width: 30%;
+  margin: 10px;
+  border: dashed rgb(227, 69, 198);
 }
 body .ofertas1 {
   background-color: white;
@@ -198,6 +230,15 @@ body footer .redes .fa-brands:hover {
     justify-content: space-between;
     width: 100%;
   }
+  body .flex-container1 .oferta1 {
+    width: 80%;
+  }
+  body .flex-container1 .oferta2 {
+    width: 80%;
+  }
+  body .flex-container1 .oferta3 {
+    width: 80%;
+  }
 }
 @media only screen and (max-width: 768px) {
   body .flex-container2 {
@@ -205,6 +246,15 @@ body footer .redes .fa-brands:hover {
     justify-content: center;
     align-items: center;
     width: 100%;
+  }
+  body .flex-container2 .vendido1 {
+    width: 80%;
+  }
+  body .flex-container2 .vendido2 {
+    width: 80%;
+  }
+  body .flex-container2 .vendido3 {
+    width: 80%;
   }
 }
 @media only screen and (max-width: 650px) {

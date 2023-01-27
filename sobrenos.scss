@@ -4,14 +4,22 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: $fuente-3;
+
 }
-.titulo{
+
+.titulo {
     font-family: $fuente-1;
     font-size: 200%;
 }
 
+h2{
+    font-family: $fuente-2;
+}
+
 body {
     background-color: $color-1;
+
 
     nav {
         border: 4px solid $color-3;
@@ -47,7 +55,11 @@ body {
 
             .parte1-5 {
                 color: rgb(223, 4, 248);
-                font-size: 100px;
+                font-size: 4em;
+                height: 10%;
+                width: 80%;
+                margin-left: 5%;
+                margin-right: 5%;
             }
 
             .parte1-6 {
@@ -65,33 +77,29 @@ body {
         }
 
         .parte2 {
-            height: 300px;
+            height: 10%;
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
 
             img {
+                height: 100%;
                 width: 50%;
-                margin: 1%;
+                border-radius: 10px;
             }
-        }
 
-        .parrafos {
-            display: flex;
-            flex-direction: row;
-        }
-
-        .p1 {
-            width: 50%;
-        }
-
-        .p2 {
-            width: 50%;
+            
         }
     }
-    
+
+    .snos {
+        margin: 2%;
+        border: 3px dashed $color-3;
+        padding: 1%;
+    }
 
 
-    .galeria-h{
+
+    .galeria-h {
         text-align: center;
         background-color: white;
         color: $color-3;
@@ -124,43 +132,116 @@ body {
         filter: grayscale(0%);
     }
 
-        .item1:hover {
-            background-image: url(../Multimedia/Empleado\ 1.jpg);
+    .item1 {
+        background-image: url(../Multimedia/Empleado\ 1.jpg);
+    }
+
+    .item2 {
+        background-image: url(../Multimedia/Empleado\ 6.jpg);
+    }
+
+    .item3 {
+        background-image: url(../Multimedia/Empleado\ 4.jpg);
+    }
+
+    .item4 {
+        background-image: url(../Multimedia/Empleado\ 2.jpg);
+    }
+
+    .item5 {
+        background-image: url(../Multimedia/Empleado\ 8.jpg);
+    }
+
+    .item6 {
+        background-image: url(../Multimedia/Empleado3.jpg);
+    }
+
+    .item7 {
+        background-image: url(../Multimedia/Empleado.jpg);
+    }
+
+    .item8 {
+        background-image: url(../Multimedia/Empleado\ 5.jpg);
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        background-color: $color-2;
+        border: 4px dashed $color-1;
+        border-bottom: none;
+
+
+        .location {
+            display: flex;
+            flex-direction: column;
+            color: $color-1;
+            margin-top: 1%;
+            margin-left: 2%;
+            margin-bottom: 1%;
+
+            .map {
+                height: 200px;
+                width: 150%;
+            }
+
+            .fa-solid {
+                margin-left: 80%;
+                margin-bottom: 10px;
+                font-size: 30px;
+
+            }
         }
 
-        .item2:hover {
-            background-image: url(../Multimedia/Empleado\ 6.jpg);
+        .horarios {
+            display: flex;
+            flex-direction: column;
+            color: $color-1;
+            margin-top: 5%;
+            margin-left: 5%;
+            margin-right: 5%;
+
+
+            .fa-regular {
+                margin-left: 50%;
+                margin-bottom: 10px;
+                font-size: 30px;
+
+            }
+
+            .horarios-p {
+                font-size: 15px;
+                margin-left: 100px;
+            }
         }
 
-        .item3:hover {
-            background-image: url(../Multimedia/Empleado\ 4.jpg);
-        }
+        .redes {
+            color: $color-1;
+            margin-top: 10%;
+            margin-right: 5%;
 
-        .item4:hover {
-            background-image: url(../Multimedia/Empleado\ 2.jpg);
-        }
+            .fa-brands {
+                font-size: 30px;
+                letter-spacing: 8px;
+                color: $color-1;
+                background-color: $color-2;
+                background-size: cover;
+            }
 
-        .item5:hover {
-            background-image: url(../Multimedia/Empleado\ 8.jpg);
-        }
+            .redes-p {
+                font-size: 15px;
+            }
 
-        .item6:hover {
-            background-image: url(../Multimedia/Empleado3.jpg);
+            .fa-brands:hover {
+                background-color: $color-1;
+                color: $color-2;
+            }
         }
-
-        .item7:hover {
-            background-image: url(../Multimedia/Empleado.jpg);
-        }
-
-        .item8:hover {
-            background-image: url(../Multimedia/Empleado\ 5.jpg);
-        }
-
-    
+    }
 
     @media only screen and (min-width: 480px) {
         .galeria {
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 1fr;
             grid-template-rows: repeat(4, 200px);
         }
 
@@ -208,104 +289,19 @@ body {
                 grid-template-rows: 200px 200px;
             }
         }
+    }
 
-
-        footer {
-            display: flex;
-            flex-direction: row;
-            background-color: $color-2;
-            border: 4px dashed $color-1;
-            border-bottom: none;
-    
-    
-            .location {
-                display: flex;
-                flex-direction: column;
-                color: $color-1;
-                margin-top: 1%;
-                margin-left: 2%;
-                margin-bottom: 1%;
-    
-                .map {
-                    height: 200px;
-                    width: 150%;
-                }
-    
-                .fa-solid {
-                    margin-left: 80%;
-                    margin-bottom: 10px;
-                    font-size: 30px;
-    
-                }
-            }
-    
-            .horarios {
-                display: flex;
-                flex-direction: column;
-                color: $color-1;
-                margin-top: 5%;
-                margin-left: 5%;
-                margin-right: 5%;
-    
-    
-                .fa-regular {
-                    margin-left: 50%;
-                    margin-bottom: 10px;
-                    font-size: 30px;
-    
-                }
-    
-                .horarios-p {
-                    font-size: 15px;
-                    margin-left: 100px;
-                }
-            }
-    
-            .redes {
-                color: $color-1;
-                margin-top: 10%;
-                margin-right: 5%;
-    
-                .fa-brands {
-                    font-size: 30px;
-                    letter-spacing: 8px;
-                    color: $color-1;
-                    background-color: $color-2;
-                    background-size: cover;
-                }
-    
-                .redes-p {
-                    font-size: 15px;
-                }
-    
-                .fa-brands:hover {
-                    background-color: $color-1;
-                    color: $color-2;
-                }
-            }
-        }
-    
-        
-        
         @media only screen and (max-width:650px) {
-            footer{
+            footer {
                 display: grid;
                 grid-template-columns: 1fr;
             }
         }
-    
+
         @media only screen and (max-width:650px) {
-            .location{
+            .location {
                 width: 50%;
             }
         }
-    }
-
-    @media only screen and (max-width:650px)
-    {
-        .trabajadores{
-            display: grid;
-            grid-template-columns: 1fr;
-        }
-    }
+    
 }

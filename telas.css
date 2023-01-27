@@ -2,11 +2,16 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: font-family, "Roboto Mono", monospace;
 }
 
 .titulo {
   font-family: font-family, "Merriweather", serif;
   font-size: 200%;
+}
+
+h2 {
+  font-family: font-family, "Ubuntu", sans-serif;
 }
 
 body {
@@ -27,7 +32,7 @@ body nav h1 {
 }
 body .seda {
   margin-top: 5%;
-  margin-bottom: 70px;
+  margin-bottom: 5%;
   background-color: white;
   border: 3px dashed black;
 }
@@ -49,21 +54,25 @@ body .carrusel1 {
   justify-content: space-around;
 }
 body .carrusel1 .seda1 {
+  height: 300px;
   width: 20%;
   margin: 10px;
   border: dashed rgb(227, 69, 198);
 }
 body .carrusel1 .seda2 {
+  height: 300px;
   width: 20%;
   margin: 10px;
   border: dashed rgb(227, 69, 198);
 }
 body .carrusel1 .seda3 {
+  height: 300px;
   width: 20%;
   margin: 10px;
   border: dashed rgb(227, 69, 198);
 }
 body .carrusel1 .seda4 {
+  height: 300px;
   width: 20%;
   margin: 10px;
   border: dashed rgb(227, 69, 198);
@@ -74,21 +83,25 @@ body .carrusel2 {
   justify-content: space-around;
 }
 body .carrusel2 .algodon1 {
+  height: 300px;
   width: 20%;
   margin: 10px;
   border: dashed rgb(227, 69, 198);
 }
 body .carrusel2 .algodon2 {
+  height: 300px;
   width: 20%;
   margin: 10px;
   border: dashed rgb(227, 69, 198);
 }
 body .carrusel2 .algodon3 {
+  height: 300px;
   width: 20%;
   margin: 10px;
   border: dashed rgb(227, 69, 198);
 }
 body .carrusel2 .algodon4 {
+  height: 300px;
   width: 20%;
   margin: 10px;
   border: dashed rgb(227, 69, 198);
@@ -100,21 +113,25 @@ body .carrusel3 {
   margin-bottom: 5%;
 }
 body .carrusel3 .lino1 {
+  height: 300px;
   width: 20%;
   margin: 10px;
   border: dashed rgb(227, 69, 198);
 }
 body .carrusel3 .lino2 {
+  height: 300px;
   width: 20%;
   margin: 10px;
   border: dashed rgb(227, 69, 198);
 }
 body .carrusel3 .lino3 {
+  height: 300px;
   width: 20%;
   margin: 10px;
   border: dashed rgb(227, 69, 198);
 }
 body .carrusel3 .lino4 {
+  height: 300px;
   width: 20%;
   margin: 10px;
   border: dashed rgb(227, 69, 198);
@@ -184,8 +201,19 @@ body footer .redes .fa-brands:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    justify-content: space-between;
     width: 100%;
+  }
+  body .carrusel1 .seda1 {
+    width: 80%;
+  }
+  body .carrusel1 .seda2 {
+    width: 80%;
+  }
+  body .carrusel1 .seda3 {
+    width: 80%;
+  }
+  body .carrusel1 .seda4 {
+    width: 80%;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -195,6 +223,18 @@ body footer .redes .fa-brands:hover {
     align-items: center;
     width: 100%;
   }
+  body .carrusel2 .algodon1 {
+    width: 80%;
+  }
+  body .carrusel2 .algodon2 {
+    width: 80%;
+  }
+  body .carrusel2 .algodon3 {
+    width: 80%;
+  }
+  body .carrusel2 .algodon4 {
+    width: 80%;
+  }
 }
 @media only screen and (max-width: 768px) {
   body .carrusel3 {
@@ -202,6 +242,18 @@ body footer .redes .fa-brands:hover {
     justify-content: center;
     align-items: center;
     width: 100%;
+  }
+  body .carrusel3 .lino1 {
+    width: 80%;
+  }
+  body .carrusel3 .lino2 {
+    width: 80%;
+  }
+  body .carrusel3 .lino3 {
+    width: 80%;
+  }
+  body .carrusel3 .lino4 {
+    width: 80%;
   }
 }
 @media only screen and (max-width: 650px) {

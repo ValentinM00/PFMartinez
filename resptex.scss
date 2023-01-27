@@ -4,7 +4,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: $fuente-3;
 }
+
+h2{
+    font-family: $fuente-2;
+}
+
 .titulo{
     font-family: $fuente-1;
     font-size: 200%;
@@ -39,23 +45,27 @@ body{
         flex-direction: row;
         justify-content: space-around;
 
-        .seda1{
+        .hombreras1{
+            height: 300px;
             width: 20%;
             margin: 10px;
             border: dashed $color-3;
         }
 
-        .seda2{
+        .hombreras2{
+            height: 300px;
             width: 20%;
             margin: 10px;
             border: dashed $color-3;
         }
-        .seda3{
+        .hombreras3{
+            height: 300px;
             width: 20%;
             margin: 10px;
             border: dashed $color-3;
         }
-        .seda4{
+        .hombreras4{
+            height: 300px;
             width: 20%;
             margin: 10px;
             border: dashed $color-3;
@@ -67,23 +77,27 @@ body{
         flex-direction: row;
         justify-content: space-around;
 
-        .algodon1{
+        .rodilleras1{
+            height: 300px;
             width: 20%;
             margin: 10px;
             border: dashed $color-3;
         }
 
-        .algodon2{
+        .rodilleras2{
+            height: 300px;
             width: 20%;
             margin: 10px;
             border: dashed $color-3;
         }
-        .algodon3{
+        .rodilleras3{
+            height: 300px;
             width: 20%;
             margin: 10px;
             border: dashed $color-3;
         }
-        .algodon4{
+        .rodilleras4{
+            height: 300px;
             width: 20%;
             margin: 10px;
             border: dashed $color-3;
@@ -96,23 +110,27 @@ body{
         justify-content: space-around;
         margin-bottom: 5%;
 
-        .lino1{
+        .encajes1{
+            height: 300px; 
             width: 20%;
             margin: 10px;
             border: dashed $color-3;
         }
 
-        .lino2{
+        .encajes2{
+            height: 300px;                   
             width: 20%;
             margin: 10px;
             border: dashed $color-3;
         }
-        .lino3{
+        .encajes3{
+            height: 300px;         
             width: 20%;
             margin: 10px;
             border: dashed $color-3;
         }
-        .lino4{
+        .encajes4{
+            height: 300px;
             width: 20%;
             margin: 10px;
             border: dashed $color-3;
@@ -205,6 +223,18 @@ body{
             justify-content: space-between;
             width: 100%;
             
+            .hombreras1{
+                width: 80%;
+            }
+            .hombreras2{
+                width: 80%;
+            }
+            .hombreras3{
+                width: 80%;
+            }
+            .hombreras4{
+                width: 80%;
+            }
         }
     }
 
@@ -214,6 +244,19 @@ body{
             justify-content: center;
             align-items: center;
             width: 100%;
+
+            .rodilleras1{
+                width: 80%;
+            }
+            .rodilleras2{
+                width: 80%;
+            }
+            .rodilleras3{
+                width: 80%;
+            }
+            .rodilleras4{
+                width: 80%;
+            }
         }
     }
     @media only screen and (max-width:768px) {
@@ -222,6 +265,19 @@ body{
             justify-content: center;
             align-items: center;
             width: 100%;
+
+            .encajes1{
+                width: 80%;
+            }
+            .encajes2{
+                width: 80%;
+            }
+            .encajes3{
+                width: 80%;
+            }
+            .encajes4{
+                width: 80%;
+            }
         }
     }
     
