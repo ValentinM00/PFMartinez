@@ -36,7 +36,7 @@ body main section {
   background: #FF0099;
   /* fallback for old browsers */
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, hsla(323deg, 19%, 24%, 0.678), hsla(324deg, 100%, 50%, 0.674)), url(../Multimedia/Fondo\ wave.jpg);
+  background: linear-gradient(to right, hsla(323deg, 19%, 24%, 0.678), hsla(324deg, 100%, 50%, 0.674)), url(./Multimedia/Fondo\ wave.jpg);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background-size: cover;
   background-attachment: fixed;
@@ -106,28 +106,28 @@ body .item:hover {
   filter: grayscale(0%);
 }
 body .item1 {
-  background-image: url(../Multimedia/Empleado\ 1.jpg);
+  background-image: url(./Multimedia/Empleado\ 1.jpg);
 }
 body .item2 {
-  background-image: url(../Multimedia/Empleado\ 6.jpg);
+  background-image: url(./Multimedia/Empleado\ 6.jpg);
 }
 body .item3 {
-  background-image: url(../Multimedia/Empleado\ 4.jpg);
+  background-image: url(./Multimedia/Empleado\ 4.jpg);
 }
 body .item4 {
-  background-image: url(../Multimedia/Empleado\ 2.jpg);
+  background-image: url(./Multimedia/Empleado\ 2.jpg);
 }
 body .item5 {
-  background-image: url(../Multimedia/Empleado\ 8.jpg);
+  background-image: url(./Multimedia/Empleado\ 8.jpg);
 }
 body .item6 {
-  background-image: url(../Multimedia/Empleado3.jpg);
+  background-image: url(./Multimedia/Empleado3.jpg);
 }
 body .item7 {
-  background-image: url(../Multimedia/Empleado.jpg);
+  background-image: url(./Multimedia/Empleado.jpg);
 }
 body .item8 {
-  background-image: url(../Multimedia/Empleado\ 5.jpg);
+  background-image: url(./Multimedia/Empleado\ 5.jpg);
 }
 body footer {
   display: flex;

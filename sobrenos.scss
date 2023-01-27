@@ -45,9 +45,9 @@ body {
             width: 100%;
             background: #FF0099;
             /* fallback for old browsers */
-            background: -webkit-linear-gradient(to right, hsla(323, 19%, 24%, 0.678), hsla(324, 100%, 50%, 0.674)), url(../Multimedia/Fondo\ wave.jpg);
+            background: -webkit-linear-gradient(to right, hsla(323, 19%, 24%, 0.678), hsla(324, 100%, 50%, 0.674)), url(./Multimedia/Fondo\ wave.jpg);
             /* Chrome 10-25, Safari 5.1-6 */
-            background: linear-gradient(to right, hsla(323, 19%, 24%, 0.678), hsla(324, 100%, 50%, 0.674)), url(../Multimedia/Fondo\ wave.jpg);
+            background: linear-gradient(to right, hsla(323, 19%, 24%, 0.678), hsla(324, 100%, 50%, 0.674)), url(./Multimedia/Fondo\ wave.jpg);
             /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
             background-size: cover;
             background-attachment: fixed;
@@ -133,35 +133,35 @@ body {
     }
 
     .item1 {
-        background-image: url(../Multimedia/Empleado\ 1.jpg);
+        background-image: url(./Multimedia/Empleado\ 1.jpg);
     }
 
     .item2 {
-        background-image: url(../Multimedia/Empleado\ 6.jpg);
+        background-image: url(./Multimedia/Empleado\ 6.jpg);
     }
 
     .item3 {
-        background-image: url(../Multimedia/Empleado\ 4.jpg);
+        background-image: url(./Multimedia/Empleado\ 4.jpg);
     }
 
     .item4 {
-        background-image: url(../Multimedia/Empleado\ 2.jpg);
+        background-image: url(./Multimedia/Empleado\ 2.jpg);
     }
 
     .item5 {
-        background-image: url(../Multimedia/Empleado\ 8.jpg);
+        background-image: url(./Multimedia/Empleado\ 8.jpg);
     }
 
     .item6 {
-        background-image: url(../Multimedia/Empleado3.jpg);
+        background-image: url(./Multimedia/Empleado3.jpg);
     }
 
     .item7 {
-        background-image: url(../Multimedia/Empleado.jpg);
+        background-image: url(./Multimedia/Empleado.jpg);
     }
 
     .item8 {
-        background-image: url(../Multimedia/Empleado\ 5.jpg);
+        background-image: url(./Multimedia/Empleado\ 5.jpg);
     }
 
     footer {
